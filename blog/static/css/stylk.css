@@ -1,0 +1,48 @@
+.xb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#yx{
+  height: 1000px;
+overflow-y: scroll;
+}
+
+#para{
+  
+  margin-top: 100px;
+  color: #f00;
+  font-size: 50px;
+  font-weight:bolder;
+}
+.valid{
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 10px !important;
+}
+#sub{
+  font-size: 30px;
+  font-weight: 900;
+  width: 50%;
+  margin-top: 10px !important;
+  background-color: #f00 !important;
+  color: #ffff;
+}
+#ho{
+  color: #ffff;
+  font-size: 25px;
+  font-weight: 900;
+ 
+  margin: 20px;
+
+}
+
+.fa-house{
+  color: #f00;
+}
+.fa-mobile-retro{
+  color: #f00;
+}
+.fa-solid{
+  color: #f00;
+}

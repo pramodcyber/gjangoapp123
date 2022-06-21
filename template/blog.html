@@ -1,0 +1,28 @@
+{%extends 'base.html' %}
+ {%block title%} Welcome to IBLOGS {%endblock%}
+{%block content%}
+<div class="container">
+    <div class="row">
+        {% for cat in pot %}
+        <div class="card col-md-4">
+            <div class="ratio ratio-4x3">
+                <img
+                    src="/media/{{cat.image}}"
+                    class="responsive-img card-img-top"
+                    alt=""
+                />
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{cat.title}}</h5>
+                <p class="card-text">
+                    {{cat.description |truncatewords:5 | safe}}
+                </p>
+            </div>
+            <div class="card-footer xb">
+                <a href="/blog/{{cat.url}}" class="btn">VIEW</a>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div>
+ {%endblock%}

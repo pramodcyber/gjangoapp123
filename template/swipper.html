@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    {% load static %}  
+<link href="{% static 'css/style.css' %}" rel="stylesheet">  
+  
+   
+</head>
+<body>
+    <section class="review">
+
+        <div class="information">
+            <span>testimonials</span>
+            <h3>what our clients says</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas praesentium asperiores fugiat, excepturi odit obcaecati a voluptatibus earum quisquam?</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+    
+        <div class="swiper review-slider ">
+    
+            <div class="swiper-wrapper" >
+    
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                    <div class="user">
+                        <img src="{% static 'images/pic-1.png' %}" alt="">
+                        {% comment %} <img src="images/pic-1.png" alt=""> {% endcomment %}
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>designer</span>
+                        </div>
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                    <div class="user">
+                        <img src="{% static 'images/pic-2.png' %}" alt="">
+                        {% comment %} <img src="images/pic-2.png" alt=""> {% endcomment %}
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>designer</span>
+                        </div>
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                    <div class="user">
+                        <img src="{% static 'images/pic-3.png' %}" alt="">
+                        {% comment %} <img src="images/pic-3.png" alt=""> {% endcomment %}
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>designer</span>
+                        </div>
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                    <div class="user">
+                        <img src="{% static 'images/pic-4.png' %}" alt="">
+                        {% comment %} <img src="images/pic-4.png" alt=""> {% endcomment %}
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>designer</span>
+                        </div>
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    {% load static %} 
+    <script src="{% static 'js/swippers.js' %}"></script>
+</body>
+</html>
+
+

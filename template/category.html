@@ -1,0 +1,44 @@
+{%extends 'base.html' %}
+
+{%block title%} Welcome to IBLOGS {%endblock%}
+
+{%block content%}
+
+<div class="container-custom">
+
+    <h3>{{cat.title}}</h3>
+    <div class="img-container">
+        <img src="/media/{{cat.image}}" class="responsive-img" style="max-height:450px;width:100%;object-fit:cover;"
+             alt="">
+  
+
+    <div class="container" style="z-index: 22222;">
+        <div class="row">
+        
+        
+            {%for p in posts %}
+            <div class="card col-md-4 my-3 align-self-center">
+                <div class="ratio ratio-4x3">
+                <img src="/media/{{p.image}}" class="responsive-img" alt="">
+             </div >
+                <div class="card-body">
+                  <h5 class="card-title"> {{p.title}}</h5>
+                  <p class="card-text">{{p.description |truncatewords:5 | safe}}</p>
+                </div>
+                <div class="card-footer align-items-center align-self-center">
+                    <a href="/blog/{{p.url}}" class="btn ">VIEW</a>
+                </div>
+            </div>
+
+            {% empty %}
+                 
+            <h1 class="text-center fs-1 fw-bold text-wrap" style="color: red;">***No posts in this category***</h1>
+            {%endfor%}
+       
+        </div>
+    </div>
+</div>
+
+{%endblock%}  
+
+

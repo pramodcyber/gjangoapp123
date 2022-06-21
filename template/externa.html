@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive fitness and gym website design</title>
+    
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /> 
+
+   
+ {% load static %} 
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" /> 
+   
+</head>
+<body>
+    
+<!-- header section starts      -->
+
+<!-- header section ends     -->
+
+<!-- home section starts  -->
+
+{%include 'homes.html' %} 
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="{% static 'images/about-img.jpg' %}" alt="">
+        {% comment %} <img src="images/about-img.jpg" alt=""> {% endcomment %}
+    </div>
+
+    <div class="content">
+        <span>about us</span>
+        <h3 class="title">Every day is a chance to become better</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia accusamus dicta inventore nobis obcaecati vero odio, id dolorum. Consequatur ex, aperiam deserunt nostrum perferendis illum unde ipsa? Consequatur, distinctio?</p>
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-check"></i>body and mind</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>healthy life</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>strategies</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>workout</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+            </div>
+        </div>
+        <a href="#" class="btn">read more</a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>gym features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'images/f-img-1.jpg' %}" alt="">
+                {% comment %} <img src="/static/images/f-img-1.jpg" alt=""> {% endcomment %}
+            </div>
+            <div class="content">
+                <img src="{% static 'images/icon-1.png' %}" alt="">
+                {% comment %} <img src="images/icon-1.png" alt=""> {% endcomment %}
+                <h3>body building</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box second">
+            <div class="image">
+                <img src="{% static 'images/f-img-2.jpg' %}" alt="">
+                {% comment %} <img src="images/f-img-2.jpg" alt=""> {% endcomment %}
+            </div>
+            <div class="content">
+                <img src="{% static 'images/icon-2.png' %}" alt="">
+                {% comment %} <img src="images/icon-2.png" alt=""> {% endcomment %}
+                <h3>gym for men</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'images/f-img-3.jpg' %}" alt="">
+                {% comment %} <img src="images/f-img-3.jpg" alt=""> {% endcomment %}
+            </div>
+            <div class="content">
+                {% comment %} <img src="images/icon-3.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/icon-3.png' %}" alt="">
+                <h3>gym for women</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- pricing section starts  -->
+
+<section class="pricing" id="pricing">
+
+    <div class="information">
+        <span>pricing plan</span>
+        <h3>affordable pricing plan for your</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore excepturi ea suscipit fugiat cum quae, rerum optio mollitia! Tempora?</p>
+        <p> <i class="fas fa-check"></i> cardio exercise </p>
+        <p> <i class="fas fa-check"></i> weight lifting </p>
+        <p> <i class="fas fa-check"></i> diet plans </p>
+        <p> <i class="fas fa-check"></i> overall results </p>
+        <a href="#" class="btn">all pricing</a>
+    </div>
+
+    <div class="plan basic">
+        <h3>basic plan</h3>
+        <div class="price"><span>Rs</span>30<span>/mo</span></div>
+       <div class="list">
+        <p> <i class="fas fa-check"></i> personal training </p>
+        <p> <i class="fas fa-check"></i> cardio exercise </p>
+        <p> <i class="fas fa-check"></i> weight lifting </p>
+        <p> <i class="fas fa-check"></i> diet plans </p>
+        <p> <i class="fas fa-check"></i> overall results </p>
+       </div>
+       <a href="#" class="btn">get started</a>
+    </div>
+
+    <div class="plan basic">
+        <h3>premium plan</h3>
+        <div class="price"><span>Rs</span>90<span>/mo</span></div>
+       <div class="list">
+        <p> <i class="fas fa-check"></i> personal training </p>
+        <p> <i class="fas fa-check"></i> cardio exercise </p>
+        <p> <i class="fas fa-check"></i> weight lifting </p>
+        <p> <i class="fas fa-check"></i> diet plans </p>
+        <p> <i class="fas fa-check"></i> overall results </p>
+       </div>
+       <a href="#" class="btn">get started</a>
+    </div>
+
+</section>
+
+<!-- pricing section ends -->
+
+<!-- trainers section starts  -->
+
+<section class="trainers" id="trainers">
+
+    <h1 class="heading"> <span>expert trainers</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{% static 'images/trainer-1.jpg' %}" alt="">
+            {% comment %} <img src="images/trainer-1.jpg" alt=""> {% endcomment %}
+            <div class="content">
+                <span>expert trainer</span>
+                <h3>john deo</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/trainer-2.jpg' %}" alt="">
+            {% comment %} <img src="images/trainer-2.jpg" alt=""> {% endcomment %}
+            <div class="content">
+                <span>expert trainer</span>
+                <h3>john deo</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/trainer-3.jpg' %}" alt="">
+            {% comment %} <img src="images/trainer-3.jpg" alt=""> {% endcomment %}
+            <div class="content">
+                <span>expert trainer</span>
+                <h3>john deo</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/trainer-4.jpg' %}" alt="">
+            {% comment %} <img src="images/trainer-4.jpg" alt=""> {% endcomment %}
+            <div class="content">
+                <span>expert trainer</span>
+                <h3>john deo</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- trainers section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner">
+
+    <span>join us now</span>
+    <h3>get upto 50% discount</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto nesciunt aut sapiente quis inventore quam vitae quod illum incidunt.</p>
+    <a href="#" class="btn">get discount</a>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- review section starts  -->
+
+{%include 'swipper.html' %} 
+
+<!-- review section ends -->
+
+<!-- blogs section starts  -->
+
+{%include 'blogs.html' %}
+  
+
+
+   
+    
+    <!-- custom js file link  -->
+    {% load static %} 
+    <script src="{% static 'js/scripts.js' %}"></script>
+
+
+</body>
+</html>
+
+

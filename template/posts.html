@@ -1,0 +1,61 @@
+{%extends 'base.html' %}
+
+{%block title%} POST {%endblock%}
+
+{%block content%}
+{% load static %}  
+<link href="{% static 'css/stylk.css' %}" rel="stylesheet"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+<div class="container-fluid" >
+
+
+
+    <div class="row ">
+        
+        <div class="col col-md-8 ">
+
+
+           
+
+            <div class="card">
+                <img src="/media/{{post.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">{{post.title}}</h1>
+                 
+                  <h3 class="card-text"> {{post.content|safe}}</h3>
+                </div>
+               
+              </div>
+            
+
+
+        </div>
+        <div class="col col-md-4" id="yx" >
+
+
+            {% for cat in cats %}
+
+            <div class="card">
+                <img src="/media/{{cat.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{cat.title}}</h5>
+                  <p class="card-text">{{cat.description}}</p>
+                </div>
+                <div class="card-footer xb">
+                   
+                    <a href="/category/{{cat.url}}" class="btn">Read Mor..</a>
+               
+                </div>
+              </div>
+            {%endfor%}
+
+
+        </div>
+    </div>
+
+</div>
+
+
+{%endblock%}
